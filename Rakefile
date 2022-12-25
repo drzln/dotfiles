@@ -1,7 +1,7 @@
 require %(json)
 
 desc %(use chef to provision local environment)
-task :provision, %w[repo] do |_t, _args|
+task :provision do
   repo              = ENV[%(DOTFILE_CHEF_REPO)] || %()
   cookbooks         = ENV[%(DOTFILE_COOKBOOKS)] || %()
   cookbook_config   = File.join(%(chef), %(cookbooks), %(dotfiles), %(.config.json))
