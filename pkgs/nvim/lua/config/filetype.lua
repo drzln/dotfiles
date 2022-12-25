@@ -10,7 +10,8 @@ function M.setup()
 		overrides = {
 			literal = {
 				direnvrc = "sh";
-				Berksfile = "ruby"
+				Berksfile = "ruby";
+				Capfile = "ruby"
 			},
 		},
 	}
