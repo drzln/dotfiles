@@ -4,9 +4,12 @@ function M.setup()
 	vim.g.did_load_filetypes = 1
 
 	require("filetype").setup {
+		complex = {
+			[".envrc"] = "sh"
+		};
 		overrides = {
 			literal = {
-				direnvrc = "zsh";
+				direnvrc = "sh";
 				Berksfile = "ruby"
 			},
 		},
