@@ -2,12 +2,12 @@ require %(json)
 
 desc %(use chef to provision local environment)
 task :provision, %w[repo] do |_t, _args|
-  repo              = ENV[%(DOTFILE_REPO)]      || %()
+  repo              = ENV[%(DOTFILE_CHEF_REPO)] || %()
   cookbooks         = ENV[%(DOTFILE_COOKBOOKS)] || %()
   cookbook_config   = File.join(%(chef), %(cookbooks), %(dotfiles), %(.config.json))
   config            = %(.dotfile_provisioning_overrides.json)
 
-  raise ArgumentError, %(must provide a DOTFILE_REPO) if repo.empty?
+  raise ArgumentError, %(must provide a DOTFILE_CHEF_REPO) if repo.empty?
 
   sh %(sudo rm -rf chef)
   sh %(git clone #{repo} chef) unless Dir.exist?(%(chef))
