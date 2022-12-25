@@ -1,0 +1,16 @@
+# related to direnv
+.my_envrc
+
+# related to chef
+chef
+nodes
+
+# related to yardoc
+.yardoc
+doc
+
+# related to dotfiles
+.dotfile_provisioning_overrides.json
+
+# related to import.bash
+vendor.bash
