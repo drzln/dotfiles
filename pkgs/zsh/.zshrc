@@ -204,3 +204,12 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+################################################################################
+# custom completions
+################################################################################
+
+[ -f ~/.config/zsh/completions/_sheldon ] && 
+	source ~/.config/zsh/completions/_sheldon
+
+############################################################################## @
