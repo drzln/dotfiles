@@ -178,8 +178,8 @@ bindkey -v
 # nomad
 ################################################################################
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/nomad nomad
+# autoload -U +X bashcompinit && bashcompinit
+# complete -o nospace -C /usr/bin/nomad nomad
 
 # #############################################################################@
 
@@ -195,3 +195,12 @@ complete -o nospace -C /usr/bin/nomad nomad
 fi
 
 # #############################################################################@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' max-errors 2 numeric
+zstyle :compinstall filename '/home/luis/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
