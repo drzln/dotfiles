@@ -209,7 +209,6 @@ compinit
 # custom completions
 ################################################################################
 
-[ -f ~/.config/zsh/completions/_sheldon ] && 
-	source ~/.config/zsh/completions/_sheldon
+fpath=(~/.config/zsh/completions $fpath)
 
 ############################################################################## @
