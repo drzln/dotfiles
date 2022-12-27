@@ -12,6 +12,7 @@ M["enabled_languages"] = {
 	"clangd",
 	"yamlls",
 	"rnix",
+	"pylsp",
 }
 
 -- languages that exist but are not automatically installed
@@ -75,7 +76,6 @@ M["autoinstalled_langauges_disabled"] = {
 	"jedi_language_server",
 	"pyright",
 	"sourcery",
-	"pylsp",
 	"rescriptls",
 	"reason_ls",
 	"robotframework_ls",
