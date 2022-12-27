@@ -7,6 +7,7 @@ function M.setup()
 		-- nls.builtins.formatting.stylua,
 		nls.builtins.formatting.shfmt,
 		nls.builtins.formatting.prettier,
+		nls.builtins.formatting.black,
 	}
 	nls.setup({ sources = sources })
 end

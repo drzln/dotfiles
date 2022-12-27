@@ -13,6 +13,7 @@ M["enabled_languages"] = {
 	"yamlls",
 	"rnix",
 	"pylsp",
+	"efm",
 }
 
 -- languages that exist but are not automatically installed
