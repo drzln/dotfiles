@@ -13,12 +13,12 @@ M["enabled_languages"] = {
 	"yamlls",
 	"rnix",
 	"pylsp",
-	"efm",
 }
 
 -- languages that exist but are not automatically installed
 M["autoinstalled_langauges_disabled"] = {
 	"beancount",
+	"efm",
 	"jsonls",
 	"omnisharp_mono",
 	"omnisharp",

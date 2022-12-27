@@ -4,10 +4,10 @@ function M.setup()
 	local nls = require("null-ls")
 	local sources = {
 		-- Prefer sumneko_lua
-		-- nls.builtins.formatting.stylua,
+		--[[ nls.builtins.formatting.stylua, ]]
+		nls.builtins.formatting.black,
 		nls.builtins.formatting.shfmt,
 		nls.builtins.formatting.prettier,
-		nls.builtins.formatting.black,
 	}
 	nls.setup({ sources = sources })
 end
