@@ -4,7 +4,8 @@ function M.setup()
 	vim.g.did_load_filetypes = 1
 
 	require("filetype").setup {
-		--[[ not working ]]
+		--[[ complex statement for .envrc not working ]]
+		--[[ in this form ]]
 		--[[ complex = { ]]
 		--[[ 	[".envrc"] = "sh" ]]
 		--[[ }; ]]
