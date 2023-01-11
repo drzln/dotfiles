@@ -14,7 +14,8 @@ function M.setup()
 				direnvrc = "sh";
 				Berksfile = "ruby";
 				Capfile = "ruby";
-				Vagrantfile = "ruby"
+				Vagrantfile = "ruby";
+				Clonefile = "ruby"
 			},
 		},
 	}

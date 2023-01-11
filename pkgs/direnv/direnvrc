@@ -1,3 +1,3 @@
 source "$HOME/.local/toolshed/import.zsh/import.zsh"
 
-import:use "github.com/luisfelipemourapereira/rbenv.bash"
+[ -f .envrc ] && import:use "github.com/luisfelipemourapereira/rbenv.bash"
